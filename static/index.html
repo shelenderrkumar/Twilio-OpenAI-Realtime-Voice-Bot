@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <!-- Bootstrap CSS -->
+    <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        background: url("/static/stars-backdrop.jpg");
+        background-size: cover;
+        height: 100vh !important;
+        width: 100% !important;
+      }
+      .logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 20px 0;
+        height: 100px;
+      }
+
+      /* Flex container for chat and cart */
+      .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .icon {
+        font-size: 48px;
+        color: lightblue;
+        cursor: pointer;
+      }
+
+      .chat-container {
+        flex: 0 0 65%;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        /* background-color: #f9f9f9; */
+        height: auto;
+        min-height: 570px; 
+        overflow-y: auto; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Ensure messages appear from the bottom */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .cart-container {
+        flex: 0 0 35%;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        height: auto;
+        max-height: 570px; 
+        overflow-y: auto; 
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+
+      /* Cart item styles */
+      .cart-item {
+        display: flex;
+        border-bottom: 1px solid #ddd;
+        padding: 20px 0;
+      }
+
+      .cart-item:last-child {
+        border-bottom: none;
+      }
+
+      .cart-item img {
+        width: 150px;
+        height: auto;
+        object-fit: contain;
+        border: none;
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+
+      .cart-item h3 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        color: #333;
+      }
+
+      .cart-item p {
+        margin: 5px 0;
+        font-size: 1rem;
+      }
+
+      .cart-item .price {
+        font-weight: bold;
+        color: #28a745;
+      }
+
+      .cart-item .unit-price {
+        color: #999;
+      }
+
+      .cart-item .quantity {
+        color: #333;
+      }
+
+      .cart-item .sku {
+        color: #007bff;
+      }
+
+      .cart-summary {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        text-align: right;
+      }
+
+      /* Chat message styles */
+      .textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        background-color: #e1e1e1;
+        display: inline-block;
+      }
+
+      .bot {
+        text-align: left;
+      }
+      .buttondiv {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Textarea for transcript */
+      .transcript-area {
+        margin-top: 20px;
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        resize: none;
+      }
+
+      /* Microphone button styles */
+      .mic-button {
+        bottom: 20px;
+        right: 20px;
+        margin-left: 10px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 10%;
+        margin-top: 12px;
+        width: 160px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 600px;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .mic-button i {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .main-container {
+          flex-direction: column-reverse;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/static/logo-white.png" alt="Logo" class="logo" />
+    <div class="main-container" id="mainContainer">
+      <!-- Chat Container -->
+      
+      <div id="chatContainer" class="chat-container">
+  
+      </div>
+    
+
+      <!-- Cart Container -->
+      <div id="cartContainer" class="cart-container">
+        <!-- <h3 class="text-black">Your Cart</h3> -->
+        <!-- Cart items will be appended here -->
+        <div id="cartSummary" class="cart-summary"></div>
+      </div>
+    </div>
+
+    <!-- Microphone button -->
+     <div class="buttondiv">
+        <button id="toggleAudio" class="mic-button">
+            <i id="micIcon" class="fas fa-microphone icon"></i>
+        </button>
+     </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+
+    <script>
+        let transcriptArea;
+        let add_cart_item
+        const cartContainer = document.getElementById('cartContainer');
+        // const transcriptArea = document.getElementById('transcriptArea');
+
+        // Create audio context
+        let audioRecorder;  // Declare audioRecorder in higher scope
+        let ws;  // Declare WebSocket in higher scope
+
+        // Create audio context
+        const BUFFER_SIZE = 4800;
+
+        class Player {
+            constructor() {
+                this.playbackNode = null;
+            }
+
+            async init(sampleRate) {
+                const audioContext = new AudioContext({ sampleRate });
+                await audioContext.audioWorklet.addModule("/static/audio-playback-worklet.js");
+
+                this.playbackNode = new AudioWorkletNode(audioContext, "audio-playback-worklet");
+                this.playbackNode.connect(audioContext.destination);
+            }
+
+            play(buffer) {
+                if (this.playbackNode) {
+                    this.playbackNode.port.postMessage(buffer);
+                }
+            }
+
+            stop() {
+                if (this.playbackNode) {
+                    this.playbackNode.port.postMessage(null);
+                }
+            }
+        }
+
+        class Recorder {
+            constructor(onDataAvailable) {
+                this.onDataAvailable = onDataAvailable;
+                this.audioContext = null;
+                this.mediaStream = null;
+                this.mediaStreamSource = null;
+                this.workletNode = null;
+            }
+
+            async start(stream) {
+                console.log('starting');
+                try {
+                    if (this.audioContext) {
+                        await this.audioContext.close();
+                    }
+
+                    this.audioContext = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 24000 });
+                    console.log('1');
+
+                    await this.audioContext.audioWorklet.addModule("/static/audio-processor-worklet.js");
+                    console.log('2');
+
+                    this.mediaStream = stream;
+                    this.mediaStreamSource = this.audioContext.createMediaStreamSource(this.mediaStream);
+
+                    this.workletNode = new AudioWorkletNode(this.audioContext, "audio-processor-worklet");
+                    this.workletNode.port.onmessage = event => {
+                        this.onDataAvailable(event.data.buffer);
+                    };
+
+                    this.mediaStreamSource.connect(this.workletNode);
+                    this.workletNode.connect(this.audioContext.destination);
+                    console.log('done');
+                } catch (error) {
+                    console.log('error', error);
+                    this.stop();
+                }
+            }
+
+            async stop() {
+                if (this.mediaStream) {
+                    this.mediaStream.getTracks().forEach(track => track.stop());
+                    this.mediaStream = null;
+                }
+
+                if (this.audioContext) {
+                    await this.audioContext.close();
+                    this.audioContext = null;
+                }
+
+                this.mediaStreamSource = null;
+                this.workletNode = null;
+            }
+        }
+
+        // Function to get microphone input and send it to WebSocket
+        async function startAudio() {
+            try {
+                // handle output -> speaker stuff
+                ws = new WebSocket("ws://localhost:3009/ws");
+
+                const audioPlayer = new Player();
+                audioPlayer.init(24000);
+
+                ws.onmessage = event => {
+                    const data = JSON.parse(event.data);
+
+                    if (data?.type === 'response.audio.delta') {
+                        const binary = atob(data.delta);
+                        const bytes = Uint8Array.from(binary, c => c.charCodeAt(0));
+                        const pcmData = new Int16Array(bytes.buffer);
+
+                        audioPlayer.play(pcmData);
+                    } else if (data?.type === 'input_audio_buffer.speech_started') {
+                        audioPlayer.stop(); // Clear the buffer
+                    } else if (data?.type === 'tool_output') {
+                        // Handle cart data
+                        const cartData = data.data; // Assuming data.data is the cart array
+                        displayCart(cartData);
+                    } else if (data?.type === 'response.audio_transcript.delta') {
+                        console.log(data.delta)
+                        // const transcriptArea = document.getElementById('textarea');
+                        if (transcriptArea) {
+                        // if (!add_cart_item) {
+                            transcriptArea.innerHTML += data.delta;
+                            transcriptArea.scrollTop = transcriptArea.scrollHeight; 
+                        }else{
+                            transcriptArea = document.createElement('textarea');
+                            transcriptArea.id = 'textarea'; // Set the id attribute
+                            transcriptArea.className = 'textarea';
+                            if (chatContainer) {
+                                chatContainer.appendChild(transcriptArea);
+                            }
+                            transcriptArea.innerHTML += data.delta;
+                            transcriptArea.scrollTop = transcriptArea.scrollHeight;
+                            // add_cart_item = false
+                        }
+                    } else if (data?.type === 'response.audio_transcript.done') {
+                        // add_cart_item = true
+                        transcriptArea = document.createElement('textarea');
+                        transcriptArea.id = 'textarea'; // Set the id attribute
+                        transcriptArea.className = 'textarea';
+                        // const chatContainer = document.getElementById('chatContainer');
+                        if (chatContainer) {
+                            chatContainer.appendChild(transcriptArea);
+                        }
+
+                    } else {
+                        console.log('Unhandled event type:', data?.type);
+                    }
+                };
+
+                let buffer = new Uint8Array();
+
+                const appendToBuffer = (newData) => {
+                    const newBuffer = new Uint8Array(buffer.length + newData.length);
+                    newBuffer.set(buffer);
+                    newBuffer.set(newData, buffer.length);
+                    buffer = newBuffer;
+                };
+
+                const handleAudioData = (data) => {
+                    const uint8Array = new Uint8Array(data);
+                    appendToBuffer(uint8Array);
+
+                    if (buffer.length >= BUFFER_SIZE) {
+                        const toSend = new Uint8Array(buffer.slice(0, BUFFER_SIZE));
+                        buffer = new Uint8Array(buffer.slice(BUFFER_SIZE));
+
+                        const regularArray = String.fromCharCode(...toSend);
+                        const base64 = btoa(regularArray);
+
+                        ws.send(JSON.stringify({ type: 'input_audio_buffer.append', audio: base64 }));
+                    }
+                };
+
+                // handle microphone -> input websocket
+                audioRecorder = new Recorder(handleAudioData);
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+
+                await audioRecorder.start(stream);
+            } catch (error) {
+                console.error('Error accessing the microphone', error);
+                alert('Error accessing the microphone. Please check your settings and try again.');
+            }
+        }
+        async function stopAudio() {
+            if (audioRecorder) {
+                await audioRecorder.stop();
+                audioRecorder = null;
+            }
+            if (ws) {
+                ws.close(1000, "Connection closed by client");
+                ws = null;
+            }
+        }
+
+        // Function to display cart data
+        function displayCart(cartData) {
+        const cartContainer = document.getElementById("cartContainer");
+        // const cartSummary = document.getElementById("cartSummary");
+        cartContainer.innerHTML = "";
+        const cartTitle = document.createElement("h3")
+        cartTitle.className = "cartTitle";
+        cartTitle.innerHTML = "Grocery Cart"; 
+        cartContainer.appendChild(cartTitle)
+
+        // let total = 0;
+
+        cartData.forEach((item) => {
+          const cartItem = document.createElement("div");
+          cartItem.className = "cart-item";
+
+          cartItem.innerHTML = `
+                    <img class="rounded" src="${item.image_url}" alt="${
+            item.item_name
+          }">
+                    <div>
+                        <h3>${item.item_name}</h3>
+                        <p class="quantity">Quantity: ${item.item_quantity}</p>
+                        <p class="price">Price: $${item.price.toFixed(2)}</p>
+                        <p class="unit-price">Unit Price: $${item.unit_price.toFixed(
+                          2
+                        )}</p>
+                    </div>
+                `;
+
+          cartContainer.appendChild(cartItem);
+        //   total += item.price;
+        });
+
+        // Display total price
+        // cartSummary.innerHTML = Total: $${total.toFixed(2)};
+      }
+
+        // Button to toggle audio
+        const toggleButton = document.getElementById("toggleAudio")
+        const micIcon = document.getElementById("micIcon");
+        let isAudioOn = false;
+
+        toggleButton.addEventListener('click', async () => {
+                if (!isAudioOn) {
+                    toggleButton.textContent = 'Stop Button';
+                    isAudioOn = true;
+                    await startAudio(); // Start audio function
+                } else {
+                    toggleButton.textContent = 'Start Button';
+                    isAudioOn = false;
+                    // Stop audio and other actions if necessary
+                    await stopAudio();
+                }
+            });
+        
+        micIcon.addEventListener("click", function () {
+            // Toggle between microphone and microphone-slash (muted) icon
+            if (micIcon.classList.contains("fa-microphone")) {
+            micIcon.classList.remove("fa-microphone");
+            micIcon.classList.add("fa-microphone-slash");
+            } else {
+            micIcon.classList.remove("fa-microphone-slash");
+            micIcon.classList.add("fa-microphone");
+            }
+        });
+    </script>
+  </body>
+</html>
+
+</body>
+</html>
