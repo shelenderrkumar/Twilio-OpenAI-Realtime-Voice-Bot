@@ -7,6 +7,9 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 GROCERY_INDEX_PATH = os.path.join(BASE_DIR, "grocery_index")
 
+from dotenv import load_dotenv
+load_dotenv()
+
 print(f"Loading FAISS index from: {GROCERY_INDEX_PATH}")
 
 embeddings = OpenAIEmbeddings(openai_api_key = os.getenv("OPENAI_API_KEY"))
