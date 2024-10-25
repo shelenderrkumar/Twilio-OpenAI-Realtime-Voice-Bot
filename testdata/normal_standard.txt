@@ -1,0 +1,301 @@
+InstaWorld about information 
+
+We are your trusted partner in revolutionizing your online business. Our mission is simple: to empower you with a state-of-the-art e-commerce logistics and financial services platform that propels your success. 
+Why InstaWorld? Biggest Network: With a reach extending to over 800 cities, we ensure that your products reach your customers swiftly and efficiently, no matter where they are. 
+Same-Day Payments: We understand the importance of cash flow for your business. That's why we offer same-day payment processing upon shipment delivery, keeping your operations smooth. 
+Cutting-Edge Technology: Backed by cutting-edge AI technology and advanced data analytics, we provide innovative solutions that streamline your logistics and payment processes.
+Goodbye to Delays: Say farewell to frustrating delivery and payment delays. Join InstaWorld today to experience a seamless, efficient, and accelerated path to e-commerce success.Your success is our success, and we are committed to fueling your growth. 
+Partner with InstaWorld and embark on a journey to elevate your online business to new heights.
+
+
+
+InstaWorld strength information:
+
+Instant COD 
+Nationwide Network 1200+ Cities
+Fastest Delivery
+Smart Fulfilment & Warehousing
+Seamless Integration
+Al/MIRouteand Fleet Optimization
+100% Insurance Coverage
+Live Order Tracking
+Lowest Price Guaranteed
+No Minimum Order Requirement
+
+
+
+InstaWorld BUSINESS PROCESS
+
+SIGN UP: Sales manager will sign up the merchant with the integrated vendor portal
+ACCOUNT MANANGER Each merchant is assigned a dedicated account manager for 24/7 query management
+API INTREGATIONS Tech enabled interactions and solutions for end-to-end logistics management
+LABEL GENERATION Labels for each parcel are made. Once made, a pickup request is generated
+PICK-UP REQUEST Consignments are picked up from the selected location, after the pick-up request is generated
+WAREHOUSE Parcels are scanned, sorted, and dispatched as per optimized routes.
+TRACKING Real time tracking allows merchants to track parcels anywhere, anytime.
+DELIVERY Consignments are delivered within assigned time frames with real time status update.
+PAYMENT Payments are made against delivered consignments.
+
+Easy-to-use mobile apps for riders End-to-end pickup and delivery journeys, Login location map, proof of attempt, digital signatures
+Feature-rich portal for Order merchants placement, label generation, parcel tracking, ticketing, real-time dashboards for transparency
+Robust backend portal for Ops and Finance End-to-end Parcel lifecycle management, vendor onboarding, rider tracking, cash collection invoicing
+Secure Open APIs for customer integrations Ecommerce plugins (Shopify, Woo-commerce)
+Communication Engine SMS, Emails, and Push notifications for real-time communication
+Extensive reporting for all business functions Ops, finance, sales, accounts management
+Easy Parcel Tracking For the end-customer
+
+
+InstaWorld SCOPE OF SERVICE:
+
+InstaWorld exclusively accepts legal and authentic products for distribution through our C.O.D services. Shippers must ensure the presence of a banking invoice during parcel pickup, a responsibility that falls on the shipper rather than the InstaWorld representative. Payment modes are restricted to cash only, with no acceptance of cheques, P.O., or demand drafts. Clients are required to make cash payments during delivery. Failure to produce the necessary cash payment at the time of delivery will result in the non- delivery of the shipment. In the event of the recipient's unavailability, InstaWorld will make delivery attempts. If additional reattempts are needed after two attempts, a 100% charge will be applied to the agreed delivery amount, and the shipper is responsible for covering any associated courier charges.
+
+Payment transactions will occur through bank transfer/IBFT based on instructions received during account opening. Volumetric or dimensional weight will be calculated, and the greater value between the volumetric and actual weight, rounded up to the nearest kilogram, will be used to determine service charges. The formula for volumetric weight calculation is as follows: Width X Length X Height in cm/5000 = Volumetric Weight in kilograms.
+
+
+
+InstaWorld OPERATION'S PROCESS:
+
+Pickups will be processed same day if orders are placed before 4pm. anything after will be on a best effort's basis. Pickup location will be defined by shipper POC at time of booking. There are 2 attempts for each delivery. Delivery status and failed reasons will be shared.
+
+InstaWorld CLAIMS:
+
+- Claims will not be acceptable in case the damage has resulted from improper packaging of the shipment by the shipper. (You can get the packing protocols details from your sales person)
+
+- Claims will be processed in 45 working days from the date of lodgment of the claim.
+
+- InstaWorld claim committee reserve the rights of Approval OR Decline any of the claim which cannot be challenged.
+
+- Instaworld claim committee will decide the percentage of the payable claim which will vary case to case.
+
+- The claim of the damaged shipments subject to the packing of the material and needs to be reported within 24 hours, after the timelines no claims will be entertained.
+
+- INSTAWORLD will not be responsible for any shipment received by the consignee in open/torn flyer or in the flyer of courier company other than INSTAWORLD.
+
+InstaWorld CUSTOMER SUPPORT:
+
+Our Customer Support department will be operating from 10:00am-6:00pm, Monday to Saturday. All the queries/complaints related to the customer support will be entertained during the time mentioned above.
+
+
+
+InstaWorld TERMS AND CONDITIONS:
+
+The shipper must agree to the following terms and conditions. No agent or employee of InstaWorld, other than authorized personnel, and no customer may alter or modify these terms and conditions: The Consignment note by signing this contract, the shipper agrees to the complete terms and conditions mentioned in this consignment note. The shipper must warrant that he/she is the owner, or the authorized agent of the owner of the goods transported by InstaWorld, and thus has accepted InstaWorld' terms and conditions on behalf of the owner, or as an owner, or on behalf of any other person having an interest in the goods being transported. Customer Obligations and Acknowledgments: The shipper warrants that each article in the shipment is properly described in the InstaWorld consignment note and the shipment details are complete and accurate. The COD value on the airway bill is considered as final for any discrepancies or claims. The shipper must make sure that the shipment is not declared as an unacceptable item by InstaWorld, and that the shipment is properly marked and packed to ensure safe transportation within a standard handling environment.
+
+InstaWorld RIGHT OF INSPECTION:
+
+InstaWorld has the right, but not the obligation, to inspect any shipment including without limitation opening the shipment if required by law and or regulations. In this regard, the Shipper, Sender, Client agrees that InstaWorld may open and inspect a shipment for any reason at any time as per its discretion. In that event InstaWorld will exercise all the reasonable care, but it shall not be liable for any damage to the shipment or any delay of the shipment or post arising as a result of any such examination.
+
+MATERIAL NOT ACCEPTABLE FOR TRANSPORTATION:
+
+InstaWorld will not accept the following as shipments; currency, Gold or Gold plated jewellery, Bullion, Antiques, Liquor, Stamps, Precious Metals, Precious Stones, Works of Art, Fire Arms, Plants, Drugs, Explosives, Animals, Perishable goods and items, Negotiable Instruments in bearer form, Lewd Objects, Obscene and Pornographic Material, Industrial Carbons and Diamonds, hazardous or combustible materials, and all other items/articles restricted by IATA (International Air Trans- port Association), ICAO (International Civil Aviation Organization) and any item whose distribution is regulated by law or by any statute of the Provincial or Federal Government of Pakistan.
+
+InstaWorld BOOKING PROCEDURE:
+- Complete name of consignee, Active number (Not WhatsApp) is must because riders do not call on WhatsApp numbers.
+- If consignee/customer have two contact numbers then mention the 2nd number at the end of the address rather than in the Contact number section.
+- House Number, Street Number, Area name, nearest land mark and exact correct City name, do not book the shipments for Tehsils and Districts.
+- We do not guarantee deliveries in Post Offices addresses and Village areas, those shipments can be booked for Self-Collection from nearest warehouse of the delivery partner assigned and after booking that shipment, you need to inform your sales person in the client coordination WhatsApp group so your sales person make sure it is booked with the right courier partner.
+
+InstaWorld FINANCIAL STATUS:
+- Add COD amount in the Amount section and select COD option in the financial status section
+- Add product price in the in the price section in line items while booking a non-cod parcel and select paid in financial status section.
+
+InstaWorld MISCELLANEOUS OPTIONS:
+- If you are booking the FRAGILE shipment then it's mandatory to paste the Fragile Sticker on your shipment so it can be treated with care from pick-up till delivery as a Fragile Item, and please be noted that Fragile shipments should be packed properly. In case of improper packing or no fragile sticker on the shipment, or any of them then claim will not be entertained for that shipment. (Please note that fragile shipments always booked on shipper Risk.)
+- Please note that (Allow to Open) Instructions should be written in REMARKS column, and right after booking, you must inform to your sales person in the group to make sure that your shipment is booked and sent through the courier partner who offers ALLOW TO OPEN service.
+- Please note that InstaWorld will not be responsible for the damage or loss of the contents of any Allowed to open shipment being returned to shipper.
+- It is shipper's responsibility to take receiving from the pickup rider while handing over the shipments or taking back returned shipments, on the load sheet generated from the portal. If shipper fails to take receiving from the rider, then INSTAWORLD will not be responsible of any Uncollected shipment on the portal that shipper will claim to have handed over to pick up rider.
+- INSTAWORLD will provide 2 delivery attempts on every shipment except for the refused shipments.
+
+
+HOW TO LODGE A QUERY on InstaWorld:
+-To lodge a complaint, please visit our customer support module on the portal to submit your inquiry. You will receive prompt answers from our customer support team within 24 to 48 hours.
+
+InstaWorld DELIVERY TIMELINES:
+- Our delivery timelines are mentioned below in normal circumstances;
+- Our 85 to 90% shipments deliver in 24-48HRS of within city area
+- 80% to 85% of shipments deliver in 48-72HRS In main cities
+- 70% to 80% of shipments deliver in 72-96HRS in other
+cities. (Delivery time may differ in far flung areas)
+
+InstaWorld Instant PAYMENT TIMELINES:
+- We pay the COD amount twice a week i.e., Monday to Saturday.
+- Shipments delivered till 3:00pm will be paid same day. Any parcel delivers after 3:00pm will be paid next day.
+- Please note that the service charges of the shipments will be deducted in the very next invoice generated after pickup.
+- Invoice will not be generated until the pending COD amount supposed to settle as per payment cycle is more than the service charges pending.
+- The fee for transferring payments to HBL accounts is 30 rupees per invoice, while transfers to accounts in other banks incur a charge of 85 rupees per invoice.
+
+InstaWorld Standard PAYMENT TIMELINES:
+- We pay the COD amount twice a week i.e., Tuesday and Friday.
+- Shipments delivered till Tuesday are settled on very next Friday while the shipments delivered till Friday are settled on very next Tuesday.
+- Please note that the service charges of the shipments will be deducted in the very next invoice generated after pickup.
+- Invoice will not be generated until the pending COD amount supposed to settle as per payment cycle is more than the service charges pending.
+- The fee for transferring payments to HBL accounts is 30 rupees per invoice, while transfers to accounts in other banks incur a charge of 85 rupees per invoice.
+
+
+
+InstaWorld Instant Nationwide Delivery service rates/pricing
+
+    - Delivery Times:
+        - Same City Delivery: 24-48 hours for the first attempt
+        - Major Cities Delivery: 48-72 hours for the first attempt
+        - Other Cities Delivery: 72-96 hours for the first attempt
+
+    - Rates:
+        - Weight: 0.1 to 1 Kg
+        - Same City: PKR 115
+        - Major Cities: PKR 159
+        - Other Cities: PKR 179
+
+    - Additional Kg:
+        - Same City: PKR 69 per extra Kg
+        - Major Cities: PKR 89 per extra Kg
+        - Other Cities: PKR 99 per extra Kg
+    - Additional Charges:
+        - Fuel Surcharge: 10% of the existing fuel price
+        - GST: Applicable as per law
+
+    - For delivered COD orders, a surcharge of 20 rupees per 2000 rupees applies on values exceeding 3000 rupees.
+
+
+
+InstaWorld Standard Nationwide Delivery service rates/pricing
+
+    - Delivery Times:
+        - Same City Delivery: 24-48 hours for the first attempt
+        - Major Cities Delivery: 48-72 hours for the first attempt
+        - Other Cities Delivery: 72-96 hours for the first attempt
+
+    - Rates:
+        - Weight: 0.1 to 1 Kg
+        - Same City: PKR 95
+        - Major Cities: PKR 139
+        - Other Cities: PKR 159
+
+    - Additional Kg:
+        - Same City: PKR 59 per extra Kg
+        - Major Cities: PKR 85 per extra Kg
+        - Other Cities: PKR 95 per extra Kg
+
+    - Additional Charges:
+        - Fuel Surcharge: 10% of the existing fuel price
+        - GST: Applicable as per law
+
+Major Cities Covered: Karachi, Islamabad, Lahore, Rawalpindi, Faisalabad, Gujranwala, Peshawar, Multan, Hyderabad, Sukkur, Quetta, Bahawalpur, Sargodha, Sialkot, Rahim Yar Khan, Gujrat, Sahiwal, Jhelum.
+
+Other Cities: Rest of Pakistan, covering over 1,200+ cities.
+
+
+InstaWorld Flyer/Packaging Material Rates
+
+- Small Flyer (8 x 11 inches): RS 17 each
+- Medium Flyer (12 x 16 inches): RS 25 each
+- Large Flyer (14 x 19 inches): RS 30 each
+
+
+
+InstaWorld Volumetric Charges
+
+- The formula for calculating volumetric weight is (length X width X height (CM) / 5000 ) or The formula for calculating volumetric weight is (length X width X height (Inches)/ 305). We charge whichever is higher
+
+- For Futher information for Standard proposal document kindly check the following link: https://instaworld.s3.us-west-2.amazonaws.com/Standard_Rates_proposal_2024.pdf
+
+- For Futher information for instant proposal document kindly check the following link: https://instaworld.s3.us-west-2.amazonaws.com/Stantdard_instant.pdf
+
+
+InstaWorld Co-Founders, CEO, COO information
+
+Hashaam Riaz Sheikh - Co-Founder & CEO
+
+hashaam.sheikh@instaworld.pk
+
+Co-Founder and Vice Chairman, Capital TV, one of the leading media networks of Pakistan. 
+Advisor to the President of Pakistan, served Pakistan at the highest constitutional office of the country. 
+Investment Banker, Global Financial Institutions Group Citi Group, NY, USA. Worked on some of the world’s largest IPOs and Merger deals in the financial sector including Visa and Carlyle Group. 
+Founder Devco International, Dubai based Consulting Company. 
+B.S. (Honors) Macalester College, USA.
+Recipient of prestigious Kofi Annan Scholarship.
+Former Headboy and Member Board of Governors, Aitchison College, Lahore.
+Avid Investor in Stocks, commodities and Real Estate Markets globally. 
+
+Dr. Basit Riaz Sheikh - Co-Founder & COO
+
+basit.r.sheikh@instaworld.pk
+
+Co-Founder and Managing Director, Capital TV, one of the leading media networks of Pakistan.
+Advisor to the Prime Minister of Pakistan on IT & Telecom. 
+CEO Universal Services Fund Company. Managed a 100-billion PKR fund for broadband proliferation in Pakistan.
+Named as one of the 100 most influential Pakistanis in 2014.
+Ph.D. in Computer Engineering from Cornell University. Awarded multiple patents.
+Certified Artificial Intelligence and Deep Learning expert.
+Worked at leading International companies: Intel Corporation, Applied Materials Inc., and National Instruments Inc.
+
+
+InstaWorld Privacy policy
+
+InstaWorld, Inc. built the InstaWorld Fulfilment & Logistics App app as a Free app. This SERVICE is provided by InstaWorld at no cost and is intended for use as is.
+
+This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
+
+If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
+
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at InstaWorld Fulfilment & Logistics App unless otherwise defined in this Privacy Policy.
+
+Information Collection and Use
+
+For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to username, password, email, photographs, phone numbers. The information that we request will be retained by us and used as described in this privacy policy.
+
+The app does use third-party services that may collect information used to identify you.
+
+Link to the privacy policy of third party service providers used by the app
+
+Google Play Services
+Firebase Analytics
+ 
+
+Log Data
+
+We want to inform you that whenever you use our Service, in the case of an error in the app we collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.
+
+Cookies
+
+Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device’s internal memory.
+
+This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+
+Service Providers
+
+We may employ third-party companies and individuals due to the following reasons:
+
+To facilitate our Service;
+To provide the Service on our behalf;
+To perform Service-related services; or
+To assist us in analyzing how our Service is used.
+We want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+
+Security
+
+We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.
+
+Links to Other Sites
+
+This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites.
+We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+
+Children’s Privacy
+
+These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do the necessary actions.
+
+Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
+
+InstaWorld Customer Support/Contact Information
+
+   - Customer Support Mobile Number: 0307-8907777
+   - Email: info@instaworld.pk
+   - Customer Support Telephone Number: 051-8907777
+   - Head Office : 9th Floor, Nacon House, Din Mohammad Wafai Rd, Civil Lines, Karachi, Karachi City, Sindh 92000
+   - Branch Office: 212A, Second Floor, Evacuee Trust Complex, G-5, Islamabad, Pakistan
+   - Branch Office: 19-26 Sir Agha Khan 3 Rd, Garhi Shahu, Lahore, Punjab
+   - Branch Office: House#03, Near MediaCom plaza adjacent Kardar Hospital Jaranwala Road, Faisalabad
+   - If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at logistics@instaworld.pk
