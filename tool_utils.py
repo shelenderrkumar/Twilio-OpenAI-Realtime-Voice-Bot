@@ -8,11 +8,9 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 GROCERY_INDEX_PATH = os.path.join(BASE_DIR, "grocery_index")
 
 print(f"Loading FAISS index from: {GROCERY_INDEX_PATH}")
-OPENAI_API_KEY="sk-MGdasqvMe-7p4Pux2Yep11DLiaAPFbpBSS7KqA-ZvaT3BlbkFJkiBvwAKuFex5lpoApnbwuEo7-1-r1RktA8N49KPegA"
 
-
-# embeddings = OpenAIEmbeddings(openai_api_key = os.getenv("OPENAI_API_KEY"))
-embeddings = OpenAIEmbeddings(openai_api_key = OPENAI_API_KEY)
+embeddings = OpenAIEmbeddings(openai_api_key = os.getenv("OPENAI_API_KEY"))
+# embeddings = OpenAIEmbeddings(openai_api_key = OPENAI_API_KEY)
 
 
 def get_sku(item_name:str):
