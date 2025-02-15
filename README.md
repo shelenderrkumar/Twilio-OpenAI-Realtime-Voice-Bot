@@ -1,6 +1,4 @@
-Certainly! Here's a comprehensive README file for the [Twilio-OpenAI-Realtime-Voice-Bot](https://github.com/shelenderrkumar/Twilio-OpenAI-Realtime-Voice-Bot) repository:
 
----
 
 # Twilio-OpenAI-Realtime-Voice-Bot
 
