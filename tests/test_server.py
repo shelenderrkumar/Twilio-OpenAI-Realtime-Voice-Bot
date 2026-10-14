@@ -1,5 +1,6 @@
 import asyncio
 import json
+import threading
 from contextlib import asynccontextmanager
 
 import pytest
@@ -25,6 +26,7 @@ class FakeRealtimeAPI:
 
     def __init__(self):
         self.received: list[dict] = []
+        self.closed = threading.Event()  # set when the server tears the session down
 
     @asynccontextmanager
     async def connect(self, *, api_key, model, url):
@@ -50,7 +52,10 @@ class FakeRealtimeAPI:
             while True:
                 yield await outbox.get()
 
-        yield send, events()
+        try:
+            yield send, events()
+        finally:
+            self.closed.set()
 
 
 def make_client(settings, fake: FakeRealtimeAPI, captured_formats: list):
@@ -122,6 +127,7 @@ def test_phone_call_end_to_end(settings):
             "media": {"payload": "agent-audio"},
         }
         ws.send_text(json.dumps({"event": "stop"}))
+        assert fake.closed.wait(timeout=5)  # hang-up ends the Realtime session
 
     assert formats == ["g711_ulaw"]
     session = fake.received[0]["session"]
@@ -144,6 +150,9 @@ def test_browser_session_uses_pcm16_and_pushes_ui_state(settings, path):
     with client.websocket_connect(path) as ws:
         ws.send_text(json.dumps({"type": "input_audio_buffer.append", "audio": "caller-audio"}))
         received = [ws.receive_json() for _ in range(3)]
+        ws.close()
+        # Closing the tab must end the Realtime session (no leaked upstream connection).
+        assert fake.closed.wait(timeout=5)
 
     assert formats == ["pcm16"]
     assert {"type": "tool_output", "name": "track_shipment", "data": ["snapshot"]} in received
