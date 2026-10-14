@@ -1,0 +1,52 @@
+sku,product_name,quantity_in_stock,image_uri,unit_to_measure,price_per_unit
+1,peeled onion,5,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/peeledonion.jpeg,kg,1
+2,onion,4,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/onionmix.jpeg,kg,1
+3,potato,5,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/potato.jpeg,kg,1
+4,tomato,1,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/tomato.jpeg,kg,1
+5,ginger,1,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/ginger.jpeg,kg,2
+6,garlic,2,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/garlic.jpeg,kg,2
+7,blackberries,3,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/fresh+blackberries.jpeg,kg,3
+8,apple,4,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/apple.jpeg,kg,2
+9,banana,200,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/banana.jpeg,dozen,1
+10,grapes,3,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/grapes.jpeg,kg,2
+11,watermelon,40,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/watermelon.jpeg,kg,1
+12,peach,2,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/peach.jpeg,kg,2
+13,eggs,150,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/fresh+eggs.jpeg,dozen,1
+14,sb eggs super,210,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/SB+eggs+Super.jpeg,dozen,1
+15,omega 3 eggs farm fresh,300,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Omega+3+eggs.jpeg,dozen,2
+16,fauji corn flakes,25,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Fauji+Corn+Flakes.jpeg,unit,1
+17,fauji bran flakes,10,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Fauji+Bran+Flakes.jpeg,unit,1
+18,nestle milo whole grain,30,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Nestle+Milo+Whole+Grain+Cereal.jpeg,unit,2
+19,nestle koko crunch cookie,13,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Nestle+koko+crunch+Cookie.jpeg,unit,1
+20,bunnys milky bread large,4,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Bunny's+Milky+Bread+Large.jpeg,unit,2
+21,bunnys milky bread small,2,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Bunnys+Milky+Bread+Small.jpeg,unit,1
+22,dawn bran bread,5,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Dawn+Bran+Bread.jpeg,unit,1
+23,dawn multigrain bread,3,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Dawn+Multigrain+Bread.jpeg,unit,1
+24,nutella chocolate spread,2,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Nutella+Chocolate+Spread.jpeg,unit,2
+25,natures home peanut butter chunky,2,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Natures+Home+Peanut+Butter+Chunky.jpeg,unit,2
+26,choco bliss hazelnut chocolate spread,0,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Choco+bliss+Hazelnet+Chocolate+Spread.jpeg,unit,1
+27,national apple jam,4,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/National+Apple+Jam.jpeg,unit,2
+28,national strawberry jam,19,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/National+Strawberry+Jam.jpeg,unit,2
+29,national mango jam,22,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/National+Mango+Jam.jpeg,unit,2
+30,nestle milk pak full cream milk,23,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Nestle+MilkPak+Full+cream+Milk.jpeg,unit,1
+31,olpers full cream milk,30,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Olper+Full+cream+Milk.jpeg,unit,1
+32,nurpur full cream milk,15,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Nurpur+Full+Cream+Milk.jpeg,unit,1
+33,nestle original yogurt sweet and tasty,9,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Nestle+Yougurt.jpeg,unit,1
+34,adams natural yogurt,4,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Adams+Natural+yogurt.jpeg,unit,1
+35,adams mint raita,10,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Adams+Mint+Raita.jpeg,unit,1
+36,adams butter,20,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Adams+Butter.jpeg,unit,2
+37,adams salted butter,12,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Adams+Salted+Butter.jpeg,unit,1
+38,adams white butter,15,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Adams+White+Butter.jpeg,unit,2
+39,prema cream cheese,10,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Prema+Cream+Cheeze.jpeg,unit,2
+40,happy cow burger cheese,25,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Happy+Cow+Burger+Cheeze.jpeg,unit,2
+41,adams cheddar cheese,21,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Adams+Chadder+Cheeze.png,unit,2
+42,mezan canola oil,500,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Meezan+Canola+Oil.jpeg,litre,2
+43,mezan cooking oil,12,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Meezan+Cooking+Oil.jpeg,litre,2
+44,dilawar cooking oil,15,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Dilawar+Cooking+Oil.jpeg,litre,2
+45,dalda cooking oil,10,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Dalda+Cooking+Oil.jpeg,litre,3
+46,kausar sella basmati rice,20,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Kausar+sella+basmati+rice.jpeg,kg,2
+47,tukra basmati rice,15,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Tukra+Basmati+Rice.jpeg,kg,2
+48,himalayan chef daily rice,15,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Himalayan+chef+daily+rice.jpeg,kg,3
+49,punjab atta,25,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/Punjab+Atta+15+kg.jpeg,kg,1
+50,oranges,10,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/orange.jpg,kg,1
+51,mangoes,25,https://groceryitems.s3.us-west-2.amazonaws.com/groceryitems/mango.jpg,kg,2
