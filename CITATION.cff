@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Realtime Voice Agent: an interruptible speech-to-speech agent over Twilio and the OpenAI Realtime API"
+authors:
+  - family-names: Kumar
+    given-names: Shelender
+repository-code: "https://github.com/shelenderrkumar/Twilio-OpenAI-Realtime-Voice-Bot"
+license: MIT
+type: software
