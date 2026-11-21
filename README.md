@@ -65,6 +65,59 @@ flowchart LR
 5. When the caller hangs up (`stop`), the merge ends and every connection and task is
    cleaned up.
 
+## Demo: one call, step by step
+
+```mermaid
+sequenceDiagram
+    participant C as Caller (phone)
+    participant T as Twilio
+    participant S as voicebot server
+    participant R as OpenAI Realtime
+    participant X as Tool executor
+    C->>T: speaks (English or Urdu)
+    T->>S: media stream, G.711 mu-law
+    S->>R: input_audio_buffer.append
+    R-->>S: speech_started (caller interrupts)
+    S->>T: clear (drop unplayed agent audio)
+    R-->>S: function calls: track_shipment, search_knowledge_base
+    S->>X: submit both calls
+    X-->>S: results in finish order, run concurrently
+    S->>R: conversation.item.create x2, then response.create
+    R-->>S: response.audio.delta
+    S->>T: media (agent speech)
+    C->>T: hangs up
+    T->>S: stop
+    S->>R: close session
+```
+
+1. **The call connects.** Twilio fetches `/incoming-call`, which answers with TwiML that opens
+   a media stream to `/media-stream`. The server opens a Realtime session in G.711 mu-law, so
+   caller audio is forwarded without being decoded.
+2. **The caller speaks**, in English or Urdu. The logistics persona is instructed to answer in
+   the caller's language ([`voicebot/profiles/logistics.py`](voicebot/profiles/logistics.py)).
+   Language handling is done by the model, so the offline tests do not cover it.
+3. **Barge-in.** When the caller talks over the agent, the Realtime API reports
+   `speech_started` and the server tells Twilio to `clear` the audio it has not played yet, so
+   the agent stops mid-sentence.
+4. **Concurrent tool calls.** If the model asks for a shipment status and a policy lookup at the
+   same time, the [`ToolExecutor`](voicebot/realtime/executor.py) runs both at once, sends each
+   result back as soon as it finishes, then asks the model to respond. A failing tool is
+   reported to the model instead of crashing the call.
+5. **Hang-up.** Twilio's `stop` event ends the stream, and the server closes the Realtime
+   session so no audio or tokens are spent after the call.
+
+Steps 1, 3 and 5 are checked end to end against a fake Realtime API by
+`tests/test_server.py::test_phone_call_end_to_end`, and step 4 by
+`tests/test_executor.py::test_concurrent_calls_complete_in_finish_order`:
+
+```bash
+pytest -v tests/test_server.py::test_phone_call_end_to_end tests/test_executor.py
+```
+
+**Run it locally, no phone needed:** `pip install -e ".[dev]"`, put `OPENAI_API_KEY` in `.env`
+(copy `.env.example`), run `python main.py`, open <http://localhost:5050> and talk through the
+browser microphone. Phone setup is under Quick start.
+
 ## Engineering decisions
 
 | Problem | Approach | Where |
