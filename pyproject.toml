@@ -5,7 +5,7 @@ description = "Phone and browser voice agent: Twilio Media Streams + OpenAI Real
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Shelender Kumar" }]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "fastapi==0.165.0",
     "uvicorn[standard]==0.54.0",
@@ -43,7 +43,7 @@ filterwarnings = [
 
 [tool.ruff]
 line-length = 100
-target-version = "py310"
+target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM"]

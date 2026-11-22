@@ -1,7 +1,7 @@
 # Realtime Voice Agent: Phone Calls with LLM Tool Use
 
 [![CI](https://github.com/shelenderrkumar/Twilio-OpenAI-Realtime-Voice-Bot/actions/workflows/ci.yml/badge.svg)](https://github.com/shelenderrkumar/Twilio-OpenAI-Realtime-Voice-Bot/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 A speech-to-speech AI agent you can **call on a real phone number** or talk to from a
@@ -193,7 +193,7 @@ fake of the Realtime API drives a real FastAPI WebSocket session through:
 
 Other tests cover the stream multiplexer's shutdown, concurrent and failing tool calls,
 cart arithmetic and validation, PII stripping, Twilio signature rejection, and that every
-tool produces a valid Realtime JSON schema. CI runs lint and tests on Python 3.10 and 3.12
+tool produces a valid Realtime JSON schema. CI runs lint and tests on Python 3.11 and 3.12
 and builds the Docker image.
 
 ## Project layout
